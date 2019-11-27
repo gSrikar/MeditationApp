@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/meditationCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/card_view_default_radius"
+        app:cardElevation="@dimen/card_view_default_elevation"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/deStressCardView"
+        app:layout_constraintEnd_toStartOf="@+id/calmCardView"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_meditation"
+            android:gravity="center"
+            android:text="@string/text_music_meditation"
+            android:textColor="@color/colorWhiteText"
+            android:textSize="@dimen/text_music_card_text_size" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/calmCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/card_view_default_radius"
+        app:cardElevation="@dimen/card_view_default_elevation"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="@+id/meditationCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/meditationCardView"
+        app:layout_constraintTop_toTopOf="@+id/meditationCardView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_calm_down"
+            android:gravity="center"
+            android:text="@string/text_music_calm_down"
+            android:textColor="@color/colorWhiteText"
+            android:textSize="@dimen/text_music_card_text_size" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/deStressCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/card_view_default_radius"
+        app:cardElevation="@dimen/card_view_default_elevation"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/relaxCardView"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meditationCardView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_de_stress"
+            android:gravity="center"
+            android:text="@string/text_music_de_stress"
+            android:textColor="@color/colorWhiteText"
+            android:textSize="@dimen/text_music_card_text_size" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/relaxCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/card_view_default_radius"
+        app:cardElevation="@dimen/card_view_default_elevation"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="@+id/deStressCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deStressCardView"
+        app:layout_constraintTop_toTopOf="@+id/deStressCardView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_relax"
+            android:gravity="center"
+            android:text="@string/text_music_relax"
+            android:textColor="@color/colorWhiteText"
+            android:textSize="@dimen/text_music_card_text_size" />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

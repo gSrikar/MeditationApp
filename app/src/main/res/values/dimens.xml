@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_music_card_text_size">18sp</dimen>
+
+    <!-- Card default values -->
+    <dimen name="card_view_default_radius">4dp</dimen>
+    <dimen name="card_view_default_elevation">4dp</dimen>
+
+    <dimen name="error_message_text_size">20sp</dimen>
+    <dimen name="error_message_vertical_margin">32dp</dimen>
+</resources>
