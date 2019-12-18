@@ -4,6 +4,6 @@
 
 * Once clicked on any of the cards, a pleasant music is played.
 
-![Home Screen](Screenshots/meditation-home-screen.png)
+<img src="https://github.com/gSrikar/MeditationApp/blob/master/Screenshots/meditation-home-screen.png" height="1200" alt="Home Screen"/>
 
-![Calm Down](Screenshots/meditation-calm-down.png)
+<img src="https://github.com/gSrikar/MeditationApp/blob/master/Screenshots/meditation-calm-down.png" height="1200" alt="Calm Down"/>
